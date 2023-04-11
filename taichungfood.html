@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>台中美食日記</title>    
+  </head>
+  <body style="padding-top:50px">
+     <!-- 導覽列 -->
+     <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            台中美食日記
+        </a>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">城市</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichung.html">台中</a>
+                <a class="dropdown-item" href="tainan.html">台南</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">台南</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" style="height: 40px;"  >
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" style="width: 80px;" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+        <div class="container">
+            <h1 class="text-center mt-5">台中市</h1>
+            <hr>
+            <div class="row">
+                <div class="col-4 justify-content-center" style="display: flex;">
+                    <div class="card" style="width: 400px;">
+                        <img src="./public/img/img3.jpg" class="card-img-top" style="width: 100%;height: 280px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">台中美食-札卡燒肉</h5>
+                            <p class="card-text"  style="text-align: justify;height: 168px;">Tiss其實對和牛的品質非常挑剔，但是，札卡燒肉的和牛真的跟我在日本吃到的和牛一模一樣，在這裡你除了可以吃到日本A5和牛之外，還可以吃到超級高檔的巧克力和牛，更特別的是它會用輸送帶把和牛送上桌，好吃又好玩，大人小孩都喜歡!</p>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#myModal1" class="btn btn-primary">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 justify-content-center" style="display: flex;">
+                    <div class="card" style="width: 400px;">
+                        <img src="./public/img/img5.jpg" class="card-img-top" style="width: 100%;height: 280px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">台中麗寶outlet美食-HAMA壽司</h5>
+                            <p class="card-text" style="text-align: justify;">はま寿司 HAMA壽司麗寶OUTLET店是台中麗寶的排隊美食，HAMA壽司開在麗寶百貨C區二樓，其實在台中麗寶OUTLET的C區人潮並沒那麼多，但是懂吃的人就知道要來這一區吃最好吃的日本握壽司，10月份又剛好遇到鮭魚祭，除了各式各樣的鮭魚握壽司，還有手捲、炙燒鮭魚海苔包、日式拉麵、日式炸物、軍艦壽司等等…</p>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#myModal2" class="btn btn-primary">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 justify-content-center" style="display: flex;">
+                    <div class="card" style="width: 400px;">
+                        <img src="./public/img/img7.jpg" class="card-img-top" style="width: 100%;height: 280px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">台中美食-岩漿火鍋</h5>
+                            <p class="card-text"  style="text-align: justify;height: 168px;">岩漿火鍋台中公益店是台中A5和牛火鍋店，這家台中麻辣鴛鴦火鍋店真是十年磨一劍，因為岩漿火鍋在新竹已經開業十年了，本來在新竹就是一家擁有超高人氣的麻辣鴛鴦火鍋店，2022年也進駐台中美食一級戰區的台中公益路美食一條街，俗話說的好：「沒有三兩三，怎敢上樑山」，說的就是岩漿火鍋沒有兩把刷子怎麼敢來台中挑戰台中火鍋。</p>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#myModal3" class="btn btn-primary">更多介紹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">台中美食-札卡燒肉</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="h3" style="text-align: center;">餐廳介紹</p>
+                    <img src="./public/img/img4.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+                    <h4 style="text-align: center;margin-top: 10px;">札卡燒肉</h4>
+                    <div style="display: flex;justify-content: center;">
+                        <p style="width: 80%;margin-top: 10px;text-align: justify;">台中燒肉推薦首選台中札卡燒肉漢口店位在台中一中街商圈附近，如果來台中旅遊想要來吃札卡燒肉，可以選擇住在台中火車站或台中一中商圈附近的台中住宿，都不會太遠，Tiss這次住在台中鳳凰酒店，開車過來約17分鐘，札卡燒肉的旁邊是鼎王麻辣鍋，鼎王旁邊的巷子就有停車場，只是要碰碰運氣，車位不多!</p>
+                    </div>
+                    <div>
+                        <hr size="8px" width="75%" style="border: 0;height: 1px;background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));display: flex;margin: 0 auto;">
+                        <div style="margin: 10px auto 0;width: 70%;text-align: center;">
+                            <h4>巧克力和牛雪花&厚切牛舌</h4>
+                            <img src="./public/img/food1.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">這盤巧克力和牛雪花黑松露月見蛋我超有興趣，第一次看到巧克力和牛雪花，澳洲的巧克力和牛是來自澳洲的Mayura Station，這裡是澳洲第一的農業區，每隻牛飼養需要36個月的時間，每天餵食約2kg的巧克力，含有多種穀物和獨家營養配方，很漂亮的大理石紋路，油脂豐富、入口即化，也可以搭配蛋黃一起享用。</p>
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>日本A5和牛盛和</h4>
+                            <img src="./public/img/food2.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">日本A5和牛盛和包括日本A5和牛雪花、日本和牛角切、日本和牛三角，日本和牛的肉質油脂真的很豐富，每次吃日本牛肉都會被油脂的鮮度、甜度驚豔，札卡燒肉的肉質讓我回想起在名古屋高山市吃到的飛驒和牛，油脂多到會噴出來那種，A5和牛盛和份量不多，每片都很珍貴，入口即化的感覺，讓人回味無窮。</p>
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>烤布蕾&手工冰淇淋</h4>
+                            <img src="./public/img/food3.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">日本A5和牛盛和包括日本A5和牛雪花、日本和牛角切、日本和牛三角，日本和牛的肉質油脂真的很豐富，每次吃日本牛肉都會被油脂的鮮度、甜度驚豔，札卡燒肉的肉質讓我回想起在名古屋高山市吃到的飛驒和牛，油脂多到會噴出來那種，A5和牛盛和份量不多，每片都很珍貴，入口即化的感覺，讓人回味無窮。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">台中美食-札卡燒肉</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="h3" style="text-align: center;">餐廳介紹</p>
+                    <img src="./public/img/img6.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+                    <h4 style="text-align: center;margin-top: 10px;">HAMA壽司</h4>
+                    <div style="display: flex;justify-content: center;">
+                        <p style="width: 80%;margin-top: 10px;text-align: justify;">はま寿司 HAMA壽司麗寶OUTLET店就開在麗寶OUTLET三期中的C區，這一區最有名的就是星巴克鐘樓。假日的中午用餐時間人潮非常多，不想排隊排太久，建議可以早一點來取號碼牌。中午用餐的人潮真的是多的不得了，我們當天在現場等了大約二十分鐘左右。</p>
+                    </div>
+                    <div>
+                        <hr size="8px" width="75%" style="border: 0;height: 1px;background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));display: flex;margin: 0 auto;">
+                        <div style="margin: 10px auto 0;width: 70%;text-align: center;">
+                            <h4>炙燒鮭魚包</h4>
+                            <img src="./public/img/food4.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">這個鮭魚包有兩種，一種是加鮭魚卵、一種是加起司，這樣的壽司，我還是第一次吃，真的有夠好吃耶~</p>
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>洋蔥握壽司</h4>
+                            <img src="./public/img/food5.jpg" class="img-fluid" style="display: block; margin: auto;">
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>炙燒柳橙鮭魚</h4>
+                            <img src="./public/img/food6.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">這個口味也很特別，橙皮酸苦感跟鮭魚的油質完美的融合在一起，忍不住我就點了兩盤來吃。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">台中美食-岩漿火鍋</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="h3" style="text-align: center;">餐廳介紹</p>
+                    <img src="./public/img/img8.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+                    <h4 style="text-align: center;margin-top: 10px;">岩漿火鍋</h4>
+                    <div style="display: flex;justify-content: center;">
+                        <p style="width: 80%;margin-top: 10px;text-align: justify;">岩漿火鍋的門口招牌好特別，以岩石為招牌的設計，再以紅色來襯托出岩漿噴發的感覺！岩漿火鍋店的裝潢非常的顯眼，令人非常容易辨識，不管是朋友或是同事聚餐，還是與家人聚餐都是很好約會的聚點，岩漿火鍋專用停車場內有汽車、機車停車格，就算住在外縣市的人想開車專程來台中用餐也很方便，岩漿火鍋公益店離中山高五權西路交流道只要6分鐘就能抵達，消費用餐即享免費停車。</p>
+                    </div>
+                    <div>
+                        <hr size="8px" width="75%" style="border: 0;height: 1px;background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));display: flex;margin: 0 auto;">
+                        <div style="margin: 10px auto 0;width: 70%;text-align: center;">
+                            <h4>A5和牛臀肉</h4>
+                            <img src="./public/img/food7.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">和牛真的是所有牛肉中最好吃的牛肉，吃過一次就回不去了，因為它的油花超漂亮、而且有一種很特別的香氣，越是高檔的牛肉越是不能煮太熟，大約煮到五分熟左右的口感最棒。和牛最好的吃法就是搭配白飯一起吃，再沾一點剛才特別調製的麻辣火鍋醬料，就算在日本也沒辦法同時體驗到麻辣鍋與和牛的好滋味。</p>
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>香滷三寶</h4>
+                            <img src="./public/img/food8.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">吃麻辣火鍋必點的火鍋料就是牛筋、牛肚、大腸這三樣了，這三樣麻辣鍋的香滷三寶放入麻辣鍋中很耐煮，所以一般都會先下鍋慢慢煮，這時如果再來杯啤酒，那就是最棒的饗宴囉！另外就是麻辣鍋鍋底中的麻辣鴨血、麻辣豆腐，這兩樣也是麻辣鍋的重要靈魂，岩漿火鍋的麻辣鴨血超嫩，而且很入味，入口即化，豆腐也一樣鮮嫩，口感就像在吃蒸蛋一樣滑嫩。</p>
+                        </div>
+                        <div style="margin: 30px auto 0;width: 70%;text-align: center;">
+                            <h4>墨魚牛軋糖</h4>
+                            <img src="./public/img/food9.jpg" class="img-fluid" style="display: block; margin: auto;">
+                            <p style="text-align: justify;margin-top: 10px;">這個墨魚丸真的是超有創意，外型看上去就像是牛軋糖一樣，想不到口感比墨魚丸還好吃，必點啊!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <hr>
+            <p>
+                &copy; 2023嶺東&middot;
+                <a href="#">隱私權政策</a>
+                &middot;
+                <a href="#">服務條款</a>
+                <a href="./index.html" style="padding-left: 72%;">Back to home</a>
+            </p>
+        </div>
+    </footer>	
+  </body>
+</html>

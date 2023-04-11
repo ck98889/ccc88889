@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          美食日記
+        </a>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">城市</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichung.html">台中</a>
+                <a class="dropdown-item" href="tainan.html">台南</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./taichungfood.html">台中</a>
+                <a class="dropdown-item" href="#">台南</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" style="height: 40px;"  >
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" style="width: 80px;" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+        <h1 class="text-center mt-5">我的美食日記</h1>
+        <!-- 第一個景點 -->
+        <div class="row">
+          <div class="col-md-9">
+            <h2><small></small></h2>
+            <p class="lead" style="text-align: justify;">
+              我終於踏上了這場旅程，來到了這片充滿多樣風景的土地上。作為一個台灣本地人，我感到自己應該要更加深入地探索自己的國家。這趟旅行，我決定到台灣東部的海岸線遊玩，沿途欣賞壯麗的海景與山景，一探這塊土地的自然美景。我希望這趟旅程可以讓我更了解這片土地，並且帶給我許多難忘的回憶。
+            </p>
+            <p class="lead" style="text-align: justify;">
+              在旅行中，除了欣賞風景，我最喜歡的就是尋找各地的美食。每當來到一個新的城市，我就會迫不及待地探索當地的美食文化，品嚐當地的特色小吃和美食佳餚。透過這些美食，我不僅可以感受到當地的風土人情，也能夠豐富我的旅行體驗，讓旅途更加充實和有意義。無論是街頭小吃還是高級餐廳，我總是充滿好奇心，期待著美食帶給我無盡的驚喜和樂趣。
+            </p>
+          </div>
+          <div class="col-md-3" style="width: 300px;height: 280px;margin-left: 30px;">
+            <img src="./public/img/diary.jpg" class="img-fluid" style="width: 250px;height: 250px ;">
+          </div>
+        </div>	
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.143830952625!2d120.62807757909027!3d24.151547852338084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ddda13bbbfd%3A0x3e1378d53d3c5109!2z5a6M5YWo5LqI57qm5Yi2IOOAgkJSQVNTIEhBTkEg5ZKM54mb5rW36a6u6Y2L54mp77yI542o56uL5YyF5buC5Yi2L-aXpeW8j-a2rua2rumNiy9TaGFidSBTaGFide-8iQ!5e0!3m2!1szh-TW!2stw!4v1681102120682!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                銅錵和牛海鮮鍋物
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82375.2478437564!2d120.65317281326797!3d24.15398010807465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dfe1c344705%3A0xabb54597e94c683e!2z6JCs5a6i5LuA6Y2LIOe-juadkeW6lw!5e0!3m2!1szh-TW!2stw!4v1681102174331!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                萬客什鍋
+              </button>
+            </div>
+          </div>
+        </div>
+	  </div>
+	  </main>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">銅錵和牛海鮮鍋物</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">餐廳介紹</p>
+            <img src="./public/img/img1.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">BRASS HANA 和牛海鮮鍋物</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">銅錵鍋日式涮涮鍋堪稱是火鍋界的 LV，從門面到內部裝潢都是走低調奢華的設計，採用全包廂式用餐空間設計，用餐環境幽雅寧靜，不受鄰客打擾，更提供專人桌邊服務。</p>
+            </div>
+            <div>
+              <hr size="8px" width="75%" style="border: 0;height: 1px;background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));display: flex;margin: 0 auto;">
+              <div style="display: flex;margin: 5px auto;width: 70%;">
+                <ul>
+                  <li>地址：台中市南屯區公益路二段 830 號</li>
+                  <li>電話：(04) 2258-1135</li>
+                  <li>時間：11:30-22:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">萬客什鍋</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">餐廳介紹</p>
+            <img src="./public/img/img2.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">萬客什鍋</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">爆夯的台中火鍋名店「萬客十鍋」，在台中總共有 4 家分店，是以台菜發想出的個人石頭小火鍋，將近 40 種口味選擇，收服饕客的味蕾。</p>
+            </div>
+            <div>
+              <hr size="8px" width="75%" style="border: 0;height: 1px;background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));display: flex;margin: 0 auto;">
+              <div style="display: flex;margin: 5px auto;width: 70%;">
+                <ul>
+                  <li>地址：台中市西區美村路一段 185 號</li>
+                  <li>電話：(04) 2305-1333</li>
+                  <li>時間：11:30~04:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+      <div class="container">
+        <hr>
+          <p>&copy; 2023嶺東&middot;
+            <a href="#">隱私權政策</a>
+            &middot;
+            <a href="#">服務條款</a>
+            <a href="#" style="padding-left: 72%;">Back to top</a>
+          </p>
+      </div>
+    </footer>
+  </body>
+</html>
